@@ -1,4 +1,4 @@
-usersList = [{"name":"","age":0,"id": 0,"email":"","typeUser":"", "password":""}] #Listado de usuarios registrados en el sistema
+usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
 
 #Despliegua la interfaz de registro para los usuarios nuevos
@@ -88,11 +88,19 @@ def main():
 
 #Opciones del Administrador
 def administratorOptionsUI():
-    print("Opciones del admin")
+    option = int(input("choose an option \n"
+                       "1) Distribución Territorial\n"
+                       "2) Administración de partidos políticos\n"
+                       "3) Administracion de papeletas\n"
+                       "4) Resultados\n"
+                       "5) Consultas\n"
+                       "6) Cerrar Secion"))
 
 #Opciones del invitado
 def invitedOptionsUI():
-    print("Opciones del admin")
+    option = int(input("choose an option \n"
+                       "1) Consultas\n"
+                       "2) Cerrar Secion"))
 
 #inicializa el programa
 main()
