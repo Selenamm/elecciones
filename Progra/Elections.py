@@ -1,5 +1,7 @@
 usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
+politicalList = [{"name":"","foundationYear":0,"color":"","ideologicalCurrent":""}]# lista de partidos politicos
+
 
 #Despliegua la interfaz de registro para los usuarios nuevos
 def registerUI():
@@ -95,14 +97,67 @@ def administratorOptionsUI():
                        "4) Resultados\n"
                        "5) Consultas\n"
                        "6) Cerrar Secion"))
+    administratorOptionRediret(option)
+
+#redirige segun la opci]on tomada por el administrador
+def administratorOptionRediret(option):
+    if (option == 1):
+       ''' #redirigir a distribucion territorial'''
+    elif (option == 2):
+        politicalPartirsOptions()
+    elif (option == 3):
+      ''' # redirigir a administracion de papeletas'''
+    elif (option == 4):
+        '''# redirigir a resultados'''
+    elif (option == 5):
+        '''# redirigir a consultas'''
+    else:
+        '''#Cerrar secion'''
+
+#opciones de administracion de partidos politicos
+def politicalPartirsOptions():
+    option = int(input("choose an option \n"
+               "1) Crear partido\n"
+               "2) Modificar partido\n"
+               "3) Eliminar partido\n"
+               "4) Back"))
+    politicalPartiesOptionRediret(option)
+
+#redirige segun la opcion de partidos politicos
+def politicalPartiesOptionRediret(option):
+    if (option == 1):
+        addPoliticalPartie()
+    elif (option == 2):
+        '''#Modificar partido'''
+    elif (option == 3):
+        ''' #Eliminar partidos'''
+    else:
+        ''' #Regresar'''
+
+# Anade un nuevo partido politico a la lista
+def addPoliticalPartie():
+    name = (input("1) Political name: "))
+    foundationYear = int(input("2) Year foundation: "))
+    color = (input("3) Colors: "))
+    ideologicalCurrent = input("4) Ideological current: ")
+
+
+    newPoliticalPartie = {}
+    newPoliticalPartie["name"] = name
+    newPoliticalPartie["foundationYear"] = foundationYear
+    newPoliticalPartie["color"] = color
+    newPoliticalPartie["ideologicalCurrent"] = ideologicalCurrent
+    politicalList.append(newPoliticalPartie)
+
+
 
 #Opciones del invitado
 def invitedOptionsUI():
     option = int(input("choose an option \n"
-                       "1) Consultas\n"
-                       "2) Cerrar Secion"))
+               "1) Consultas\n"
+               "2) Cerrar Secion"))
 
-#inicializa el programa
+    #inicializa el programa
 main()
 
 
