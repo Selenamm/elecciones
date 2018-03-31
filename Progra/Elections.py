@@ -1,6 +1,8 @@
+from Progra import PoliticalPartie
+
 usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
-politicalList = [{"name":"PAC","foundationYear":0,"color":"","ideologicalCurrent":""},{"name":"PLN","foundationYear":0,"color":"","ideologicalCurrent":""}]# lista de partidos politicos
+politicalList = []# lista de partidos politicos
 
 
 #Despliegua la interfaz de registro para los usuarios nuevos
@@ -150,12 +152,9 @@ def addPoliticalPartie():
     ideologicalCurrent = input("4) Ideological current: ")
 
 
-    newPoliticalPartie = {}
-    newPoliticalPartie["name"] = name
-    newPoliticalPartie["foundationYear"] = foundationYear
-    newPoliticalPartie["color"] = color
-    newPoliticalPartie["ideologicalCurrent"] = ideologicalCurrent
+    newPoliticalPartie = PoliticalPartie.PoliticalPartie(name,foundationYear,color,ideologicalCurrent)
     politicalList.append(newPoliticalPartie)
+
     print("Political partie add succesfully")
     politicalPartiesOptions()
 
@@ -163,22 +162,22 @@ def addPoliticalPartie():
 def modifyPoliticalPartie():
     count = 1
     for i in politicalList:
-        print(str(count) + ")"+ i["name"] + "\n")
+        print(str(count) + ")"+ i.name + "\n")
         count = count + 1
     option = int(input("choose a partie: "))
 
     countModify = 1
     for x in politicalList:
         if (option == countModify):
-            name = (input("1) Political name ("+x["name"]+") : "))
-            foundationYear = int(input("2) Year foundation("+str(x["foundationYear"])+")): "))
-            color = (input("3) Colors("+x["color"]+"): "))
-            ideologicalCurrent = input("4) Ideological current("+x["ideologicalCurrent"]+"): ")
+            name = (input("1) Political name ("+x.name+") : "))
+            foundationYear = int(input("2) Year foundation("+str(x.foundationYear)+")): "))
+            color = (input("3) Colors("+x.color+"): "))
+            ideologicalCurrent = input("4) Ideological current("+x.ideologicalCurrent+"): ")
 
-            x["name"] = name
-            x["foundationYear"] = foundationYear
-            x["color"] = color
-            x["ideologicalCurrent"] = ideologicalCurrent
+            x.name = name
+            x.foundationYear = foundationYear
+            x.color = color
+            x.ideologicalCurrent = ideologicalCurrent
 
         countModify +=1
     print("Political partie update succesfully")
@@ -188,7 +187,7 @@ def modifyPoliticalPartie():
 def deletePoliticalPartie():
     count = 1
     for i in politicalList:
-        print(str(count) + ")" + i["name"] + "\n")
+        print(str(count) + ")" + i.name + "\n")
         count = count + 1
     option = int(input("choose a partie: "))
 
@@ -197,6 +196,7 @@ def deletePoliticalPartie():
         if (option == countDelete):
             politicalList.pop( countDelete - 1)
         countDelete += 1
+
     print("Partie delete succesfully!")
     politicalPartiesOptions()
 
