@@ -1,7 +1,9 @@
-from Progra import PoliticalPartie
+from Progra import PoliticalPartie,Province,Canton,District
+
 
 usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
+territorialDistributionList = []
 politicalList = []# lista de partidos politicos
 
 
@@ -109,7 +111,7 @@ def administratorOptionsUI():
 #redirige segun la opci]on tomada por el administrador
 def administratorOptionRediret(option):
     if (option == 1):
-       ''' #redirigir a distribucion territorial'''
+       territorialDistributionOptions()
     elif (option == 2):
         politicalPartiesOptions()
     elif (option == 3):
@@ -120,6 +122,97 @@ def administratorOptionRediret(option):
         '''# redirigir a consultas'''
     else:
         main()
+# opciones de administracion de distribucipon territorial
+def territorialDistributionOptions():
+    print("\n\n")
+    option = int(input("choose an option \n"
+               "1) Manage Province\n"
+               "2) Manage Canton\n"
+               "3) Manage District\n"
+               "4) Back\n"
+               "Option: "))
+    territorialDistributionOptionRediret(option)
+
+#redirige segun la opcion de distribuci[on territorial
+def territorialDistributionOptionRediret(option):
+    if (option == 1):
+        manageProvince()
+    elif (option == 2):
+        '''manageCanton()'''
+    elif (option == 3):
+       ''' manageDistrict()'''
+    else:
+        administratorOptionsUI()
+
+# permite modificar,crear o eliminar provincias
+def manageProvince():
+    print("\n\n")
+    option = int(input("choose an option \n"
+                       "1) Create Province\n"
+                       "2) Modify Province\n"
+                       "3) Delete Province\n"
+                       "4) Back\n"
+                       "Option: "))
+
+    if (option == 1):
+        createProvince()
+    elif (option == 2):
+        modifyProvince()
+    elif (option == 3):
+        deleteProvince()
+    else:
+        territorialDistributionOptions()
+
+# permite crear provincias y agregar los diputados
+def createProvince():
+    print("\n")
+    name = (input("1) Province name: "))
+    deputyNumber = int(input("2) Deputy number: "))
+
+    newProvince = Province.Province(name, deputyNumber)
+    territorialDistributionList.append(newProvince)
+
+    print("Province add succesfully")
+    manageProvince()
+
+# permite modificar la provincia y numero de diputados
+def modifyProvince():
+    count = 1
+    for i in territorialDistributionList:
+        print(str(count) + ")" + i.name + "\n")
+        count = count + 1
+    option = int(input("Choose a Province: "))
+
+    countModify = 1
+    for x in territorialDistributionList:
+        if (option == countModify):
+            name = (input("1) Province name (" + x.name + ") : "))
+            deputyNumber = int(input("2) Deputy number(" + str(x.deputyNumber) + ")): "))
+
+            x.name = name
+            x.deputyNumber = deputyNumber
+
+        countModify += 1
+    print("Province update succesfully")
+    manageProvince()
+
+#permite eliminar la provincia deseada
+def deleteProvince():
+    count = 1
+    for i in territorialDistributionList:
+        print(str(count) + ")" + i.name + "\n")
+        count = count + 1
+    option = int(input("Choose a Province: "))
+
+    countDelete = 1
+    for x in territorialDistributionList:
+        if (option == countDelete):
+            territorialDistributionList.pop(countDelete - 1)
+        countDelete += 1
+
+    print("Province delete succesfully!")
+    manageProvince()
+
 
 #opciones de administracion de partidos politicos
 def politicalPartiesOptions():
