@@ -11,3 +11,6 @@ class Province:
 
     def addCanton(self,canton):
         self.cantonList.append(canton)
+
+    def getCantonList(self):
+        return self.cantonList
