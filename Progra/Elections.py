@@ -138,7 +138,7 @@ def territorialDistributionOptionRediret(option):
     if (option == 1):
         manageProvince()
     elif (option == 2):
-        '''manageCanton()'''
+        manageCanton()
     elif (option == 3):
        ''' manageDistrict()'''
     else:
@@ -213,6 +213,74 @@ def deleteProvince():
     print("Province delete succesfully!")
     manageProvince()
 
+# permite administrar cantones
+def manageCanton():
+    print("\n\n")
+    option = int(input("choose an option \n"
+                       "1) Create Canton\n"
+                       "2) Modify Canton\n"
+                       "3) Delete Canton\n"
+                       "4) Back\n"
+                       "Option: "))
+
+    if (option == 1):
+        createCanton()
+    elif (option == 2):
+        modifyCanton()
+    elif (option == 3):
+        '''deleteCanton()'''
+    else:
+        territorialDistributionOptions()
+
+
+def createCanton():
+    count = 1
+    for i in territorialDistributionList:
+        print(str(count) + ")" + i.name + "\n")
+        count = count + 1
+    option = int(input("Choose a Province: "))
+
+    countModify = 1
+    for x in territorialDistributionList:
+        if (option == countModify):
+            name = (input("1) Canton name (" + x.name + ") : "))
+            newCanton = Canton.Canton(name)     #crea un objeto del tipo canton
+            x.addCanton(newCanton)         #guarda el objeto en la clase provincia
+
+        countModify += 1
+
+    print("Canton add succesfully")
+    manageCanton()
+
+
+def modifyCanton():
+    count = 1
+    for i in territorialDistributionList:
+        print(str(count) + ")" + i.name + "\n")
+        count = count + 1
+    option = int(input("Choose a Province: "))
+
+    countProvince = 1
+    for x in territorialDistributionList:
+        if (option == countProvince):
+
+            countCanton = 1
+            for y in x.getCantonList():
+                print(str(countCanton) + ")" + y.name + "\n")
+                countCanton += 1
+            optionCanton = int(input("Choose a Canton: "))
+
+            countCantonModify = 1
+            for z in x.getCantonList():
+                if(optionCanton == countCantonModify):
+                    name = input("Canton name("+z.name+"): ")
+                countCantonModify += 1
+
+        countProvince += 1
+
+
+    print("Canton update succesfully")
+    manageCanton()
 
 #opciones de administracion de partidos politicos
 def politicalPartiesOptions():
@@ -300,8 +368,8 @@ def invitedOptionsUI():
                "2) Cerrar Secion"))
 
     #inicializa el programa
-main()
 
+main()
 
 '''def printUsersList():
     for i in usersList:
