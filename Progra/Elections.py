@@ -1,4 +1,4 @@
-usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
+usersList = [{"name":"","age":0,"id":0,"email":"","typeUser":"", "password":""}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
 
 #Despliegua la interfaz de registro para los usuarios nuevos
@@ -58,7 +58,7 @@ def loginUser(id,password):
                 redirectUserAutenticate(i)
             else:
                 print("Wrong Credentials")
-    #print("You are not registrated")
+    # print("You are not registrated")
 
 #Redirecciona a un usuario auntenticado al menu
 def redirectUserAutenticate(user):
@@ -94,13 +94,25 @@ def administratorOptionsUI():
                        "3) Administracion de papeletas\n"
                        "4) Resultados\n"
                        "5) Consultas\n"
-                       "6) Cerrar Secion"))
+                       "6) Cerrar Sesion"))
+    if option == 1:
+        print("Choose option \n"
+              "1)Distribuir el país\n"
+              "2)Add Cantones \n"
+              "3)Add Distritos")
+
+    if option == 2:
+            print("Choose option\n"
+                  "1) Create partidos politicos\n"
+                  "2) Modificate partidos politicos\n"
+                  "3) Eliminate partidos politicos\n"
+                  "Option: ")
 
 #Opciones del invitado
 def invitedOptionsUI():
     option = int(input("choose an option \n"
                        "1) Consultas\n"
-                       "2) Cerrar Secion"))
+                       "2) Cerrar Sesion"))
 
 #inicializa el programa
 main()
