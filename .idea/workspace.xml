@@ -31,16 +31,15 @@
       <file leaf-file-name="Elections.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="278">
+              <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
               <folding>
-                <element signature="e#940#1231#0" expanded="false" />
-                <element signature="e#1334#1550#0" expanded="false" />
-                <element signature="e#1647#1753#0" expanded="false" />
-                <element signature="e#1819#2048#0" expanded="false" />
-                <element signature="e#2137#2365#0" expanded="false" />
-                <element signature="e#2413#2792#0" expanded="false" />
-                <element signature="e#2856#3286#0" expanded="false" />
+                <element signature="e#941#1232#0" expanded="false" />
+                <element signature="e#1335#1551#0" expanded="false" />
+                <element signature="e#1648#1754#0" expanded="false" />
+                <element signature="e#1820#2049#0" expanded="false" />
+                <element signature="e#2138#2366#0" expanded="false" />
+                <element signature="e#2414#2793#0" expanded="false" />
                 <element signature="e#3387#3731#0" expanded="false" />
                 <element signature="e#3832#4106#0" expanded="false" />
                 <element signature="e#4217#4404#0" expanded="false" />
@@ -328,13 +327,12 @@
         <state relative-caret-position="850">
           <caret line="208" column="27" lean-forward="true" selection-start-line="208" selection-start-column="27" selection-end-line="208" selection-end-column="27" />
           <folding>
-            <element signature="e#940#1231#0" expanded="false" />
-            <element signature="e#1334#1550#0" expanded="false" />
-            <element signature="e#1647#1753#0" expanded="false" />
-            <element signature="e#1819#2048#0" expanded="false" />
-            <element signature="e#2137#2365#0" expanded="false" />
-            <element signature="e#2413#2792#0" expanded="false" />
-            <element signature="e#2856#3286#0" expanded="false" />
+            <element signature="e#941#1232#0" expanded="false" />
+            <element signature="e#1335#1551#0" expanded="false" />
+            <element signature="e#1648#1754#0" expanded="false" />
+            <element signature="e#1820#2049#0" expanded="false" />
+            <element signature="e#2138#2366#0" expanded="false" />
+            <element signature="e#2414#2793#0" expanded="false" />
             <element signature="e#3387#3731#0" expanded="false" />
             <element signature="e#3832#4106#0" expanded="false" />
             <element signature="e#4217#4404#0" expanded="false" />
@@ -396,13 +394,12 @@
         <state relative-caret-position="935">
           <caret line="102" column="25" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
           <folding>
-            <element signature="e#940#1231#0" expanded="false" />
-            <element signature="e#1334#1550#0" expanded="false" />
-            <element signature="e#1647#1753#0" expanded="false" />
-            <element signature="e#1819#2048#0" expanded="false" />
-            <element signature="e#2137#2365#0" expanded="false" />
-            <element signature="e#2413#2792#0" expanded="false" />
-            <element signature="e#2856#3286#0" expanded="false" />
+            <element signature="e#941#1232#0" expanded="false" />
+            <element signature="e#1335#1551#0" expanded="false" />
+            <element signature="e#1648#1754#0" expanded="false" />
+            <element signature="e#1820#2049#0" expanded="false" />
+            <element signature="e#2138#2366#0" expanded="false" />
+            <element signature="e#2414#2793#0" expanded="false" />
             <element signature="e#3387#3731#0" expanded="false" />
             <element signature="e#3832#4106#0" expanded="false" />
             <element signature="e#4217#4404#0" expanded="false" />
@@ -499,16 +496,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="278">
+          <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
           <folding>
-            <element signature="e#940#1231#0" expanded="false" />
-            <element signature="e#1334#1550#0" expanded="false" />
-            <element signature="e#1647#1753#0" expanded="false" />
-            <element signature="e#1819#2048#0" expanded="false" />
-            <element signature="e#2137#2365#0" expanded="false" />
-            <element signature="e#2413#2792#0" expanded="false" />
-            <element signature="e#2856#3286#0" expanded="false" />
+            <element signature="e#941#1232#0" expanded="false" />
+            <element signature="e#1335#1551#0" expanded="false" />
+            <element signature="e#1648#1754#0" expanded="false" />
+            <element signature="e#1820#2049#0" expanded="false" />
+            <element signature="e#2138#2366#0" expanded="false" />
+            <element signature="e#2414#2793#0" expanded="false" />
             <element signature="e#3387#3731#0" expanded="false" />
             <element signature="e#3832#4106#0" expanded="false" />
             <element signature="e#4217#4404#0" expanded="false" />

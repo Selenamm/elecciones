@@ -1,4 +1,4 @@
-from Progra import PoliticalPartie,Province,Canton,District
+from Progra import PoliticalPartie,Province,Canton#,District
 
 
 usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
@@ -99,7 +99,7 @@ def main():
 def administratorOptionsUI():
     print("\n\n")
     option = int(input("Choose an option \n"
-                       "1) \Territorial distribution\n"
+                       "1) Territorial distribution\n"
                        "2) Administration of political paties\n"
                        "3) Administration of ballots\n"
                        "4) Results\n"
