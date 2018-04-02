@@ -98,13 +98,13 @@ def main():
 #Opciones del Administrador
 def administratorOptionsUI():
     print("\n\n")
-    option = int(input("choose an option \n"
-                       "1) Distribución Territorial\n"
-                       "2) Administración de partidos políticos\n"
-                       "3) Administracion de papeletas\n"
-                       "4) Resultados\n"
-                       "5) Consultas\n"
-                       "6) Cerrar Secion\n"
+    option = int(input("Choose an option \n"
+                       "1) \Territorial distribution\n"
+                       "2) Administration of political paties\n"
+                       "3) Administration of ballots\n"
+                       "4) Results\n"
+                       "5) Consultation\n"
+                       "6) Sing off\n"
                        "Option: "))
     administratorOptionRediret(option)
 
