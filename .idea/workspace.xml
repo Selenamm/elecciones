@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9ec5bc-3be0-4554-b8dd-dc3644a2820f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Progra/Elections.py" afterPath="$PROJECT_DIR$/Progra/Elections.py" />
-      <change beforePath="$PROJECT_DIR$/Progra/Province.py" afterPath="$PROJECT_DIR$/Progra/Province.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,31 +28,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Elections.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Elections.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="e#448#834#0" expanded="false" />
                 <element signature="e#940#1231#0" expanded="false" />
-                <element signature="e#962#1037#0" expanded="false" />
                 <element signature="e#1334#1550#0" expanded="false" />
                 <element signature="e#1647#1753#0" expanded="false" />
                 <element signature="e#1819#2048#0" expanded="false" />
                 <element signature="e#2137#2365#0" expanded="false" />
                 <element signature="e#2413#2792#0" expanded="false" />
-                <element signature="e#2856#3294#0" expanded="false" />
-                <element signature="e#3840#4114#0" expanded="false" />
-                <element signature="e#4488#4952#0" expanded="false" />
-                <element signature="e#6039#6460#0" expanded="false" />
-                <element signature="e#8514#8784#0" expanded="false" />
-                <element signature="e#8881#9082#0" expanded="false" />
-                <element signature="e#9159#9589#0" expanded="false" />
-                <element signature="e#9659#10463#0" expanded="false" />
-                <element signature="e#10530#10915#0" expanded="false" />
-                <element signature="e#10968#11105#0" expanded="false" />
-                <element signature="e#11115#11210#1" expanded="false" />
+                <element signature="e#2856#3286#0" expanded="false" />
+                <element signature="e#3387#3731#0" expanded="false" />
+                <element signature="e#3832#4106#0" expanded="false" />
+                <element signature="e#4217#4404#0" expanded="false" />
+                <element signature="e#4480#4944#0" expanded="false" />
+                <element signature="e#5023#5296#0" expanded="false" />
+                <element signature="e#5379#5964#0" expanded="false" />
+                <element signature="e#6031#6452#0" expanded="false" />
+                <element signature="e#6509#6967#0" expanded="false" />
+                <element signature="e#6994#7575#0" expanded="false" />
+                <element signature="e#7602#8419#0" expanded="false" />
+                <element signature="e#8506#8776#0" expanded="false" />
+                <element signature="e#8873#9074#0" expanded="false" />
+                <element signature="e#9151#9581#0" expanded="false" />
+                <element signature="e#9651#10455#0" expanded="false" />
+                <element signature="e#10522#10907#0" expanded="false" />
+                <element signature="e#10960#11097#0" expanded="false" />
+                <element signature="e#11107#11202#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -69,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Province.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Province.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Progra/Province.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -199,6 +203,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="Province" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Progra" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="elecciones" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Progra/Province.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="ml" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,14 +239,16 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.ml" />
       <item index="1" class="java.lang.String" itemvalue="Python.Elections" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Province" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.Elections" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ml" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Province" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ml" />
       </list>
     </recent_temporary>
   </component>
@@ -304,25 +328,30 @@
         <state relative-caret-position="850">
           <caret line="208" column="27" lean-forward="true" selection-start-line="208" selection-start-column="27" selection-end-line="208" selection-end-column="27" />
           <folding>
-            <element signature="e#448#834#0" expanded="false" />
             <element signature="e#940#1231#0" expanded="false" />
-            <element signature="e#962#1037#0" expanded="false" />
             <element signature="e#1334#1550#0" expanded="false" />
             <element signature="e#1647#1753#0" expanded="false" />
             <element signature="e#1819#2048#0" expanded="false" />
             <element signature="e#2137#2365#0" expanded="false" />
             <element signature="e#2413#2792#0" expanded="false" />
-            <element signature="e#2856#3294#0" expanded="false" />
-            <element signature="e#3840#4114#0" expanded="false" />
-            <element signature="e#4488#4952#0" expanded="false" />
-            <element signature="e#6039#6460#0" expanded="false" />
-            <element signature="e#8514#8784#0" expanded="false" />
-            <element signature="e#8881#9082#0" expanded="false" />
-            <element signature="e#9159#9589#0" expanded="false" />
-            <element signature="e#9659#10463#0" expanded="false" />
-            <element signature="e#10530#10915#0" expanded="false" />
-            <element signature="e#10968#11105#0" expanded="false" />
-            <element signature="e#11115#11210#1" expanded="false" />
+            <element signature="e#2856#3286#0" expanded="false" />
+            <element signature="e#3387#3731#0" expanded="false" />
+            <element signature="e#3832#4106#0" expanded="false" />
+            <element signature="e#4217#4404#0" expanded="false" />
+            <element signature="e#4480#4944#0" expanded="false" />
+            <element signature="e#5023#5296#0" expanded="false" />
+            <element signature="e#5379#5964#0" expanded="false" />
+            <element signature="e#6031#6452#0" expanded="false" />
+            <element signature="e#6509#6967#0" expanded="false" />
+            <element signature="e#6994#7575#0" expanded="false" />
+            <element signature="e#7602#8419#0" expanded="false" />
+            <element signature="e#8506#8776#0" expanded="false" />
+            <element signature="e#8873#9074#0" expanded="false" />
+            <element signature="e#9151#9581#0" expanded="false" />
+            <element signature="e#9651#10455#0" expanded="false" />
+            <element signature="e#10522#10907#0" expanded="false" />
+            <element signature="e#10960#11097#0" expanded="false" />
+            <element signature="e#11107#11202#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -367,25 +396,30 @@
         <state relative-caret-position="935">
           <caret line="102" column="25" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
           <folding>
-            <element signature="e#448#834#0" expanded="false" />
             <element signature="e#940#1231#0" expanded="false" />
-            <element signature="e#962#1037#0" expanded="false" />
             <element signature="e#1334#1550#0" expanded="false" />
             <element signature="e#1647#1753#0" expanded="false" />
             <element signature="e#1819#2048#0" expanded="false" />
             <element signature="e#2137#2365#0" expanded="false" />
             <element signature="e#2413#2792#0" expanded="false" />
-            <element signature="e#2856#3294#0" expanded="false" />
-            <element signature="e#3840#4114#0" expanded="false" />
-            <element signature="e#4488#4952#0" expanded="false" />
-            <element signature="e#6039#6460#0" expanded="false" />
-            <element signature="e#8514#8784#0" expanded="false" />
-            <element signature="e#8881#9082#0" expanded="false" />
-            <element signature="e#9159#9589#0" expanded="false" />
-            <element signature="e#9659#10463#0" expanded="false" />
-            <element signature="e#10530#10915#0" expanded="false" />
-            <element signature="e#10968#11105#0" expanded="false" />
-            <element signature="e#11115#11210#1" expanded="false" />
+            <element signature="e#2856#3286#0" expanded="false" />
+            <element signature="e#3387#3731#0" expanded="false" />
+            <element signature="e#3832#4106#0" expanded="false" />
+            <element signature="e#4217#4404#0" expanded="false" />
+            <element signature="e#4480#4944#0" expanded="false" />
+            <element signature="e#5023#5296#0" expanded="false" />
+            <element signature="e#5379#5964#0" expanded="false" />
+            <element signature="e#6031#6452#0" expanded="false" />
+            <element signature="e#6509#6967#0" expanded="false" />
+            <element signature="e#6994#7575#0" expanded="false" />
+            <element signature="e#7602#8419#0" expanded="false" />
+            <element signature="e#8506#8776#0" expanded="false" />
+            <element signature="e#8873#9074#0" expanded="false" />
+            <element signature="e#9151#9581#0" expanded="false" />
+            <element signature="e#9651#10455#0" expanded="false" />
+            <element signature="e#10522#10907#0" expanded="false" />
+            <element signature="e#10960#11097#0" expanded="false" />
+            <element signature="e#11107#11202#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -410,16 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13328">
           <caret line="786" column="0" lean-forward="false" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="79" />
-          <folding>
-            <element signature="e#1087#2148#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -455,39 +479,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Province.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="79" />
+          <folding>
+            <element signature="e#1087#2148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+        <state relative-caret-position="257">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#448#834#0" expanded="false" />
             <element signature="e#940#1231#0" expanded="false" />
-            <element signature="e#962#1037#0" expanded="false" />
             <element signature="e#1334#1550#0" expanded="false" />
             <element signature="e#1647#1753#0" expanded="false" />
             <element signature="e#1819#2048#0" expanded="false" />
             <element signature="e#2137#2365#0" expanded="false" />
             <element signature="e#2413#2792#0" expanded="false" />
-            <element signature="e#2856#3294#0" expanded="false" />
-            <element signature="e#3840#4114#0" expanded="false" />
-            <element signature="e#4488#4952#0" expanded="false" />
-            <element signature="e#6039#6460#0" expanded="false" />
-            <element signature="e#8514#8784#0" expanded="false" />
-            <element signature="e#8881#9082#0" expanded="false" />
-            <element signature="e#9159#9589#0" expanded="false" />
-            <element signature="e#9659#10463#0" expanded="false" />
-            <element signature="e#10530#10915#0" expanded="false" />
-            <element signature="e#10968#11105#0" expanded="false" />
-            <element signature="e#11115#11210#1" expanded="false" />
+            <element signature="e#2856#3286#0" expanded="false" />
+            <element signature="e#3387#3731#0" expanded="false" />
+            <element signature="e#3832#4106#0" expanded="false" />
+            <element signature="e#4217#4404#0" expanded="false" />
+            <element signature="e#4480#4944#0" expanded="false" />
+            <element signature="e#5023#5296#0" expanded="false" />
+            <element signature="e#5379#5964#0" expanded="false" />
+            <element signature="e#6031#6452#0" expanded="false" />
+            <element signature="e#6509#6967#0" expanded="false" />
+            <element signature="e#6994#7575#0" expanded="false" />
+            <element signature="e#7602#8419#0" expanded="false" />
+            <element signature="e#8506#8776#0" expanded="false" />
+            <element signature="e#8873#9074#0" expanded="false" />
+            <element signature="e#9151#9581#0" expanded="false" />
+            <element signature="e#9651#10455#0" expanded="false" />
+            <element signature="e#10522#10907#0" expanded="false" />
+            <element signature="e#10960#11097#0" expanded="false" />
+            <element signature="e#11107#11202#1" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Progra/Province.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
