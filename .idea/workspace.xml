@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9ec5bc-3be0-4554-b8dd-dc3644a2820f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Progra/Elections.py" afterPath="$PROJECT_DIR$/Progra/Elections.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,42 +32,8 @@
       <file leaf-file-name="Elections.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
-              <folding>
-                <element signature="e#941#1232#0" expanded="false" />
-                <element signature="e#1335#1551#0" expanded="false" />
-                <element signature="e#1648#1754#0" expanded="false" />
-                <element signature="e#1820#2049#0" expanded="false" />
-                <element signature="e#2138#2366#0" expanded="false" />
-                <element signature="e#2414#2793#0" expanded="false" />
-                <element signature="e#3387#3731#0" expanded="false" />
-                <element signature="e#3832#4106#0" expanded="false" />
-                <element signature="e#4217#4404#0" expanded="false" />
-                <element signature="e#4480#4944#0" expanded="false" />
-                <element signature="e#5023#5296#0" expanded="false" />
-                <element signature="e#5379#5964#0" expanded="false" />
-                <element signature="e#6031#6452#0" expanded="false" />
-                <element signature="e#6509#6967#0" expanded="false" />
-                <element signature="e#6994#7575#0" expanded="false" />
-                <element signature="e#7602#8419#0" expanded="false" />
-                <element signature="e#8506#8776#0" expanded="false" />
-                <element signature="e#8873#9074#0" expanded="false" />
-                <element signature="e#9151#9581#0" expanded="false" />
-                <element signature="e#9651#10455#0" expanded="false" />
-                <element signature="e#10522#10907#0" expanded="false" />
-                <element signature="e#10960#11097#0" expanded="false" />
-                <element signature="e#11107#11202#1" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoliticalPartie.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Progra/PoliticalPartie.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="1124">
+              <caret line="274" column="0" lean-forward="true" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,8 +42,8 @@
       <file leaf-file-name="Province.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Progra/Province.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="85">
+              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -85,8 +52,8 @@
       <file leaf-file-name="Canton.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Progra/Canton.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,6 +64,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoliticalPartie.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Progra/PoliticalPartie.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -123,6 +100,7 @@
         <option value="$PROJECT_DIR$/Progra/District.py" />
         <option value="$PROJECT_DIR$/Progra/TerritorialDistribution.py" />
         <option value="$PROJECT_DIR$/Progra/Province.py" />
+        <option value="$USER_HOME$/Downloads/elecciones-master/Progra/Elections.py" />
         <option value="$PROJECT_DIR$/Progra/Elections.py" />
       </list>
     </option>
@@ -149,6 +127,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,11 +144,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/elecciones-master/Progra/Elections.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -184,6 +162,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Elections">
+    <configuration name="Elections (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/elecciones-master/Progra" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="elecciones" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/elecciones-master/Progra/Elections.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Elections" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -238,16 +234,18 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.ml" />
       <item index="1" class="java.lang.String" itemvalue="Python.Elections" />
       <item index="2" class="java.lang.String" itemvalue="Python.Province" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Elections (1)" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python.Elections" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Province" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ml" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Elections (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Province" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ml" />
       </list>
     </recent_temporary>
   </component>
@@ -269,14 +267,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2514881" sideWeight="0.49019608" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27631578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.087171055" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2514881" sideWeight="0.50980395" order="2" side_tool="true" content_ui="tabs" />
@@ -317,40 +314,166 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="44" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="79" />
+          <folding>
+            <element signature="e#1087#2148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Province.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Canton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/District.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/PoliticalPartie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5814">
+          <caret line="342" column="0" lean-forward="true" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="79" />
+          <folding>
+            <element signature="e#1087#2148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/PoliticalPartie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Province.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Canton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/District.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6511">
+          <caret line="383" column="0" lean-forward="true" selection-start-line="383" selection-start-column="0" selection-end-line="383" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="79" />
+          <folding>
+            <element signature="e#1087#2148#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/PoliticalPartie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Province.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Canton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/District.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4828">
+          <caret line="284" column="27" lean-forward="true" selection-start-line="284" selection-start-column="27" selection-end-line="284" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="208" column="27" lean-forward="true" selection-start-line="208" selection-start-column="27" selection-end-line="208" selection-end-column="27" />
-          <folding>
-            <element signature="e#941#1232#0" expanded="false" />
-            <element signature="e#1335#1551#0" expanded="false" />
-            <element signature="e#1648#1754#0" expanded="false" />
-            <element signature="e#1820#2049#0" expanded="false" />
-            <element signature="e#2138#2366#0" expanded="false" />
-            <element signature="e#2414#2793#0" expanded="false" />
-            <element signature="e#3387#3731#0" expanded="false" />
-            <element signature="e#3832#4106#0" expanded="false" />
-            <element signature="e#4217#4404#0" expanded="false" />
-            <element signature="e#4480#4944#0" expanded="false" />
-            <element signature="e#5023#5296#0" expanded="false" />
-            <element signature="e#5379#5964#0" expanded="false" />
-            <element signature="e#6031#6452#0" expanded="false" />
-            <element signature="e#6509#6967#0" expanded="false" />
-            <element signature="e#6994#7575#0" expanded="false" />
-            <element signature="e#7602#8419#0" expanded="false" />
-            <element signature="e#8506#8776#0" expanded="false" />
-            <element signature="e#8873#9074#0" expanded="false" />
-            <element signature="e#9151#9581#0" expanded="false" />
-            <element signature="e#9651#10455#0" expanded="false" />
-            <element signature="e#10522#10907#0" expanded="false" />
-            <element signature="e#10960#11097#0" expanded="false" />
-            <element signature="e#11107#11202#1" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -393,31 +516,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="102" column="25" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
-          <folding>
-            <element signature="e#941#1232#0" expanded="false" />
-            <element signature="e#1335#1551#0" expanded="false" />
-            <element signature="e#1648#1754#0" expanded="false" />
-            <element signature="e#1820#2049#0" expanded="false" />
-            <element signature="e#2138#2366#0" expanded="false" />
-            <element signature="e#2414#2793#0" expanded="false" />
-            <element signature="e#3387#3731#0" expanded="false" />
-            <element signature="e#3832#4106#0" expanded="false" />
-            <element signature="e#4217#4404#0" expanded="false" />
-            <element signature="e#4480#4944#0" expanded="false" />
-            <element signature="e#5023#5296#0" expanded="false" />
-            <element signature="e#5379#5964#0" expanded="false" />
-            <element signature="e#6031#6452#0" expanded="false" />
-            <element signature="e#6509#6967#0" expanded="false" />
-            <element signature="e#6994#7575#0" expanded="false" />
-            <element signature="e#7602#8419#0" expanded="false" />
-            <element signature="e#8506#8776#0" expanded="false" />
-            <element signature="e#8873#9074#0" expanded="false" />
-            <element signature="e#9151#9581#0" expanded="false" />
-            <element signature="e#9651#10455#0" expanded="false" />
-            <element signature="e#10522#10907#0" expanded="false" />
-            <element signature="e#10960#11097#0" expanded="false" />
-            <element signature="e#11107#11202#1" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -433,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="224" column="4" lean-forward="false" selection-start-line="224" selection-start-column="4" selection-end-line="224" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -441,6 +539,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13328">
           <caret line="786" column="0" lean-forward="false" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Progra/TerritorialDistribution.py" />
+    <entry file="file://$PROJECT_DIR$/ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="79" />
+          <folding>
+            <element signature="e#1087#2148#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -452,77 +561,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Progra/TerritorialDistribution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Progra/Canton.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Progra/PoliticalPartie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Progra/Province.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="85">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ml.py">
+    <entry file="file://$PROJECT_DIR$/Progra/PoliticalPartie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="79" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="79" />
-          <folding>
-            <element signature="e#1087#2148#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/elecciones-master/Progra/Elections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="378" column="29" lean-forward="true" selection-start-line="378" selection-start-column="29" selection-end-line="378" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Progra/Elections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="111" column="19" lean-forward="false" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
-          <folding>
-            <element signature="e#941#1232#0" expanded="false" />
-            <element signature="e#1335#1551#0" expanded="false" />
-            <element signature="e#1648#1754#0" expanded="false" />
-            <element signature="e#1820#2049#0" expanded="false" />
-            <element signature="e#2138#2366#0" expanded="false" />
-            <element signature="e#2414#2793#0" expanded="false" />
-            <element signature="e#3387#3731#0" expanded="false" />
-            <element signature="e#3832#4106#0" expanded="false" />
-            <element signature="e#4217#4404#0" expanded="false" />
-            <element signature="e#4480#4944#0" expanded="false" />
-            <element signature="e#5023#5296#0" expanded="false" />
-            <element signature="e#5379#5964#0" expanded="false" />
-            <element signature="e#6031#6452#0" expanded="false" />
-            <element signature="e#6509#6967#0" expanded="false" />
-            <element signature="e#6994#7575#0" expanded="false" />
-            <element signature="e#7602#8419#0" expanded="false" />
-            <element signature="e#8506#8776#0" expanded="false" />
-            <element signature="e#8873#9074#0" expanded="false" />
-            <element signature="e#9151#9581#0" expanded="false" />
-            <element signature="e#9651#10455#0" expanded="false" />
-            <element signature="e#10522#10907#0" expanded="false" />
-            <element signature="e#10960#11097#0" expanded="false" />
-            <element signature="e#11107#11202#1" expanded="false" />
-          </folding>
+        <state relative-caret-position="1124">
+          <caret line="274" column="0" lean-forward="true" selection-start-line="274" selection-start-column="0" selection-end-line="274" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

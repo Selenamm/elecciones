@@ -1,7 +1,10 @@
+usersList = [{"name":"","age":0,"id":0,"email":"","typeUser":"", "password":""}] #Listado de usuarios registrados en el sistema
+
 from Progra import PoliticalPartie,Province,Canton#,District
 
 
 usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
+
 userLogged = {} #Mantiene los datos del usuario autenticado
 territorialDistributionList = []
 politicalList = []# lista de partidos politicos
@@ -66,7 +69,7 @@ def loginUser(id,password):
                 redirectUserAutenticate(i)
             else:
                 print("Wrong Credentials")
-    #print("You are not registrated")
+    # print("You are not registrated")
 
 #Redirecciona a un usuario auntenticado al menu
 def redirectUserAutenticate(user):
@@ -281,18 +284,6 @@ def modifyCanton():
 
     print("Canton update succesfully")
     manageCanton()
-
-#opciones de administracion de partidos politicos
-def politicalPartiesOptions():
-    print("\n\n")
-    option = int(input("choose an option \n"
-               "1) Crear partido\n"
-               "2) Modificar partido\n"
-               "3) Eliminar partido\n"
-               "4) Back\n"
-               "Option: "))
-    politicalPartiesOptionRediret(option)
-
 #redirige segun la opcion de partidos politicos
 def politicalPartiesOptionRediret(option):
     if (option == 1):
@@ -364,9 +355,10 @@ def deletePoliticalPartie():
 #Opciones del invitado
 def invitedOptionsUI():
     option = int(input("choose an option \n"
-               "1) Consultas\n"
-               "2) Cerrar Secion"))
-
+                       "1) Consultas\n"
+                       "2) Cerrar Sesion"
+                       "3) Back"
+                       "Option:"))
     #inicializa el programa
 
 main()
@@ -379,5 +371,7 @@ printUsersList()
 
 main()
 '''
+
+
 
 
