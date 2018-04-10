@@ -1,24 +1,8 @@
-<<<<<<< HEAD
-usersList = [{"name":"","age":0,"id":0,"email":"","typeUser":"", "password":""}] #Listado de usuarios registrados en el sistema
-
-=======
-<<<<<<< HEAD
-usersList = [{"name":"","age":0,"id":0,"email":"","typeUser":"", "password":""}] #Listado de usuarios registrados en el sistema
-=======
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
-from Progra import PoliticalPartie,Province,Canton#,District
-
-
 usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
-<<<<<<< HEAD
-
-=======
->>>>>>> 409dfe28aa2ac3d7ddd59a38846e5b3ee27d5851
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
 userLogged = {} #Mantiene los datos del usuario autenticado
-territorialDistributionList = []
 politicalList = []# lista de partidos politicos
-
+distribution = []
+territorialList = [{}]
 
 #Despliegua la interfaz de registro para los usuarios nuevos
 def registerUI():
@@ -79,7 +63,7 @@ def loginUser(id,password):
                 redirectUserAutenticate(i)
             else:
                 print("Wrong Credentials")
-    # print("You are not registrated")
+    #print("You are not registrated")
 
 #Redirecciona a un usuario auntenticado al menu
 def redirectUserAutenticate(user):
@@ -109,6 +93,8 @@ def main():
             run_program = False
 
 #Opciones del Administrador
+
+#territorialList["Province"] = ""
 def administratorOptionsUI():
     print("\n\n")
     option = int(input("Choose an option \n"
@@ -120,8 +106,7 @@ def administratorOptionsUI():
                        "6) Sing off\n"
                        "Option: "))
     administratorOptionRediret(option)
-
-#redirige segun la opci]on tomada por el administrador
+#redirige segun la opcion tomada por el administrador
 def administratorOptionRediret(option):
     if (option == 1):
        territorialDistributionOptions()
@@ -146,7 +131,7 @@ def territorialDistributionOptions():
                "Option: "))
     territorialDistributionOptionRediret(option)
 
-#redirige segun la opcion de distribuci[on territorial
+#redirige segun la opcion de distribucition territorial
 def territorialDistributionOptionRediret(option):
     if (option == 1):
         manageProvince()
@@ -182,8 +167,8 @@ def createProvince():
     name = (input("1) Province name: "))
     deputyNumber = int(input("2) Deputy number: "))
 
-    newProvince = Province.Province(name, deputyNumber)
-    territorialDistributionList.append(newProvince)
+   # newProvince = Province.Province(name, deputyNumber)
+    #territorialDistributionList.append(newProvince)
 
     print("Province add succesfully")
     manageProvince()
@@ -294,41 +279,18 @@ def modifyCanton():
 
     print("Canton update succesfully")
     manageCanton()
-<<<<<<< HEAD
-=======
 
 #opciones de administracion de partidos politicos
 def politicalPartiesOptions():
     print("\n\n")
     option = int(input("choose an option \n"
-<<<<<<< HEAD
-                       "1) Distribución Territorial\n"
-                       "2) Administración de partidos políticos\n"
-                       "3) Administracion de papeletas\n"
-                       "4) Resultados\n"
-                       "5) Consultas\n"
-                       "6) Cerrar Sesion"))
-    if option == 1:
-        print("Choose option \n"
-              "1)Distribuir el país\n"
-              "2)Add Cantones \n"
-              "3)Add Distritos")
-
-    if option == 2:
-            print("Choose option\n"
-                  "1) Create partidos politicos\n"
-                  "2) Modificate partidos politicos\n"
-                  "3) Eliminate partidos politicos\n"
-                  "Option: ")
-=======
-               "1) Crear partido\n"
-               "2) Modificar partido\n"
-               "3) Eliminar partido\n"
+               "1) Create political partie\n"
+               "2) Modificate political partie\n"
+               "3) Eliminate political partie\n"
                "4) Back\n"
                "Option: "))
     politicalPartiesOptionRediret(option)
 
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
 #redirige segun la opcion de partidos politicos
 def politicalPartiesOptionRediret(option):
     if (option == 1):
@@ -396,26 +358,13 @@ def deletePoliticalPartie():
 
     print("Partie delete succesfully!")
     politicalPartiesOptions()
->>>>>>> 409dfe28aa2ac3d7ddd59a38846e5b3ee27d5851
 
 #Opciones del invitado
 def invitedOptionsUI():
     option = int(input("choose an option \n"
-<<<<<<< HEAD
-                       "1) Consultas\n"
-                       "2) Cerrar Sesion"
-                       "3) Back"
-                       "Option:"))
-=======
-<<<<<<< HEAD
-                       "1) Consultas\n"
-                       "2) Cerrar Sesion"))
-=======
                "1) Consultas\n"
                "2) Cerrar Secion"))
->>>>>>> 409dfe28aa2ac3d7ddd59a38846e5b3ee27d5851
 
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
     #inicializa el programa
 
 main()
@@ -428,7 +377,3 @@ printUsersList()
 
 main()
 '''
-
-
-
-
