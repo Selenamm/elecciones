@@ -1,8 +1,8 @@
 usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
-politicalList = []# lista de partidos politicos
+politicalList = [{}]# lista de partidos politicos
 distribution = []
-territorialList = [{}]
+territorialDistributionList = []
 
 #Despliegua la interfaz de registro para los usuarios nuevos
 def registerUI():
@@ -63,7 +63,6 @@ def loginUser(id,password):
                 redirectUserAutenticate(i)
             else:
                 print("Wrong Credentials")
-    #print("You are not registrated")
 
 #Redirecciona a un usuario auntenticado al menu
 def redirectUserAutenticate(user):
@@ -302,41 +301,50 @@ def politicalPartiesOptionRediret(option):
     else:
         administratorOptionsUI()
 
+
+def createPoliticalPartie(pname,foundationYear,color,ideologicalCurrent):
+    newPoliticalPartie = {}
+    newPoliticalPartie["name"]=pname
+    newPoliticalPartie["foundationYear"] = 0
+    newPoliticalPartie["colors"] = ""
+    newPoliticalPartie["ideologicalCurrent"] = ""
+    #newPoliticalPartie = (name, foundationYear, color, ideologicalCurrent)
+    politicalList.append(newPoliticalPartie)
+
 # Anade un nuevo partido politico a la lista
 def addPoliticalPartie():
+
     print("\n")
     name = (input("1) Political name: "))
     foundationYear = int(input("2) Year foundation: "))
     color = (input("3) Colors: "))
     ideologicalCurrent = input("4) Ideological current: ")
-
-
-    newPoliticalPartie = PoliticalPartie.PoliticalPartie(name,foundationYear,color,ideologicalCurrent)
-    politicalList.append(newPoliticalPartie)
+    createPoliticalPartie(name,foundationYear,color,ideologicalCurrent)
 
     print("Political partie add succesfully")
     politicalPartiesOptions()
 
+
 #modifica los partidos registrados
-def modifyPoliticalPartie():
+def modifyPoliticalPartie(count):
     count = 1
     for i in politicalList:
-        print(str(count) + ")"+ i.name + "\n")
+        print(str(count)+ ")"+ i["name"] + "\n")
         count = count + 1
     option = int(input("choose a partie: "))
 
     countModify = 1
     for x in politicalList:
         if (option == countModify):
-            name = (input("1) Political name ("+x.name+") : "))
-            foundationYear = int(input("2) Year foundation("+str(x.foundationYear)+")): "))
-            color = (input("3) Colors("+x.color+"): "))
-            ideologicalCurrent = input("4) Ideological current("+x.ideologicalCurrent+"): ")
+            name = (input("1) Political name ("+ input(name)+") : "))
+            foundationYear = int(input("2) Year foundation("+str(input(foundationYear))+")): "))
+            color = (input("3) Colors("+color+"): "))
+            ideologicalCurrent = input("4) Ideological current("+ideologicalCurrent+"): ")
 
-            x.name = name
-            x.foundationYear = foundationYear
-            x.color = color
-            x.ideologicalCurrent = ideologicalCurrent
+            name = name
+            foundationYear = foundationYear
+            color = color
+            ideologicalCurrent = ideologicalCurrent
 
         countModify +=1
     print("Political partie update succesfully")
