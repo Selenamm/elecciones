@@ -1,20 +1,5 @@
-<<<<<<< HEAD
-usersList = [{"name":"","age":0,"id":0,"email":"","typeUser":"", "password":""}] #Listado de usuarios registrados en el sistema
-
-=======
-<<<<<<< HEAD
-usersList = [{"name":"","age":0,"id":0,"email":"","typeUser":"", "password":""}] #Listado de usuarios registrados en el sistema
-=======
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
 from Progra import PoliticalPartie,Province,Canton#,District
-
-
-usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
-<<<<<<< HEAD
-
-=======
->>>>>>> 409dfe28aa2ac3d7ddd59a38846e5b3ee27d5851
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
+usersList = [{"name":"Dayana","age":17,"id": 1,"email":"fsdfsd","typeUser":"Administrator", "password":"1"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
 territorialDistributionList = []
 politicalList = []# lista de partidos politicos
@@ -79,7 +64,6 @@ def loginUser(id,password):
                 redirectUserAutenticate(i)
             else:
                 print("Wrong Credentials")
-    # print("You are not registrated")
 
 #Redirecciona a un usuario auntenticado al menu
 def redirectUserAutenticate(user):
@@ -241,7 +225,7 @@ def manageCanton():
     elif (option == 2):
         modifyCanton()
     elif (option == 3):
-        '''deleteCanton()'''
+        deleteCanton()
     else:
         territorialDistributionOptions()
 
@@ -287,6 +271,7 @@ def modifyCanton():
             for z in x.getCantonList():
                 if(optionCanton == countCantonModify):
                     name = input("Canton name("+z.name+"): ")
+                    z.name = name
                 countCantonModify += 1
 
         countProvince += 1
@@ -294,41 +279,48 @@ def modifyCanton():
 
     print("Canton update succesfully")
     manageCanton()
-<<<<<<< HEAD
-=======
+
+#PErmite eliminar los cantones
+def deleteCanton():
+    count = 1
+    for i in territorialDistributionList:
+        print(str(count) + ")" + i.name + "\n")
+        count = count + 1
+    option = int(input("Choose a Province: "))
+
+    countProvince = 1
+    for x in territorialDistributionList:
+        if (option == countProvince):
+            countProvince = 1
+
+            countCanton = 1
+            for y in x.getCantonList():
+                print(str(countCanton) + ")" + y.name + "\n")
+                countCanton += 1
+            optionCanton = int(input("Choose a Canton: "))
+
+            countCantonDelete = 1
+            for z in x.getCantonList():
+                if (optionCanton == countCantonDelete):
+                    territorialDistributionList.pop(countCantonDelete - 1)
+                countCantonDelete +=1
+
+
+    print("Canton delete succesfully!")
+    manageCanton()
+
 
 #opciones de administracion de partidos politicos
 def politicalPartiesOptions():
     print("\n\n")
     option = int(input("choose an option \n"
-<<<<<<< HEAD
-                       "1) Distribución Territorial\n"
-                       "2) Administración de partidos políticos\n"
-                       "3) Administracion de papeletas\n"
-                       "4) Resultados\n"
-                       "5) Consultas\n"
-                       "6) Cerrar Sesion"))
-    if option == 1:
-        print("Choose option \n"
-              "1)Distribuir el país\n"
-              "2)Add Cantones \n"
-              "3)Add Distritos")
-
-    if option == 2:
-            print("Choose option\n"
-                  "1) Create partidos politicos\n"
-                  "2) Modificate partidos politicos\n"
-                  "3) Eliminate partidos politicos\n"
-                  "Option: ")
-=======
-               "1) Crear partido\n"
-               "2) Modificar partido\n"
-               "3) Eliminar partido\n"
-               "4) Back\n"
-               "Option: "))
+                       "1) Create political partie\n"
+                       "2) Modificate political partie\n"
+                       "3) Eliminate political partie\n"
+                       "4) Back\n"
+                       "Option: "))
     politicalPartiesOptionRediret(option)
 
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
 #redirige segun la opcion de partidos politicos
 def politicalPartiesOptionRediret(option):
     if (option == 1):
@@ -396,26 +388,16 @@ def deletePoliticalPartie():
 
     print("Partie delete succesfully!")
     politicalPartiesOptions()
->>>>>>> 409dfe28aa2ac3d7ddd59a38846e5b3ee27d5851
 
 #Opciones del invitado
 def invitedOptionsUI():
     option = int(input("choose an option \n"
-<<<<<<< HEAD
-                       "1) Consultas\n"
-                       "2) Cerrar Sesion"
-                       "3) Back"
-                       "Option:"))
-=======
-<<<<<<< HEAD
-                       "1) Consultas\n"
-                       "2) Cerrar Sesion"))
-=======
-               "1) Consultas\n"
-               "2) Cerrar Secion"))
->>>>>>> 409dfe28aa2ac3d7ddd59a38846e5b3ee27d5851
+                       "1) Consultation\n"
+                       "2) Sign off\n"
+                       "3) Back\n"
+                       "Option: "))
 
->>>>>>> 9bf424184ac9fc7a85fac537a821a7458dff9b0b
+
     #inicializa el programa
 
 main()
