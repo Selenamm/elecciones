@@ -137,7 +137,7 @@ def territorialDistributionOptionRediret(option):
     elif (option == 2):
         manageCanton()
     elif (option == 3):
-       ''' manageDistrict()'''
+       manageDistrict()
     else:
         administratorOptionsUI()
 
@@ -291,7 +291,7 @@ def deleteCanton():
     countProvince = 1
     for x in territorialDistributionList:
         if (option == countProvince):
-            countProvince = 1
+            countProvince += 1
 
             countCanton = 1
             for y in x.getCantonList():
@@ -307,6 +307,53 @@ def deleteCanton():
 
 
     print("Canton delete succesfully!")
+    manageCanton()
+
+
+#Permite agregar distritos
+def manageDistrict():
+    print("\n\n")
+    option = int(input("choose an option \n"
+                       "1) Create District\n"
+                       "2) Modify District\n"
+                       "3) Delete District\n"
+                       "4) Back\n"
+                       "Option: "))
+
+    if (option == 1):
+        createDistrict()
+    elif (option == 2):
+        '''modifyDistrict()'''
+    elif (option == 3):
+        '''deleteDistrict()'''
+    else:
+        territorialDistributionOptions()
+
+
+#Permite crear distritos
+def createDistrict():
+    count = 1
+    for i in territorialDistributionList:
+        print(str(count) + ")" + i.name + "\n")
+        count = count + 1
+    option = int(input("Choose a Province: "))
+
+    countCanton = 1
+    for x in territorialDistributionList:
+        print(str(countCanton)+")" + x.name + "\n")
+        countCanton+=1
+    option = int(input("Choose a Canton: "))
+
+    countDistrict = 1
+    for z in territorialDistributionList:
+        if (option == countDistrict):
+            name = (input("1) District name (" + z.name + ") : "))
+            newDistrict = District.District(name)  # crea un objeto del tipo canton
+            z.addDistrict(newDistrict)  # guarda el objeto en la clase provincia
+
+        countDistrict += 1
+
+    print("Canton add succesfully")
     manageCanton()
 
 
