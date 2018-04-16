@@ -1,4 +1,4 @@
-from Progra import PoliticalPartie,Province,Canton#,District
+from Progra import PoliticalPartie,Province,Canton,District
 usersList = [{"name":"Dayana","age":17,"id": 1,"email":"fsdfsd","typeUser":"Administrator", "password":"1"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
 territorialDistributionList = []
@@ -229,7 +229,7 @@ def manageCanton():
     else:
         territorialDistributionOptions()
 
-
+#permite crear cantones
 def createCanton():
     count = 1
     for i in territorialDistributionList:
@@ -249,7 +249,7 @@ def createCanton():
     print("Canton add succesfully")
     manageCanton()
 
-
+#permite modificar cantones
 def modifyCanton():
     count = 1
     for i in territorialDistributionList:
@@ -293,16 +293,21 @@ def deleteCanton():
         if (option == countProvince):
             countProvince += 1
 
-            countCanton = 1
-            for y in x.getCantonList():
-                print(str(countCanton) + ")" + y.name + "\n")
-                countCanton += 1
-            optionCanton = int(input("Choose a Canton: "))
+        countCanton = 1
+        for y in x.getCantonList:
+            print(str(countCanton) + ")" + y.name + "\n")
+            countCanton += 1
+        optionCanton = int(input("Choose a Canton: "))
+
+        countCanton1 = 1
+        for x in y.getCantonList:
+            if (option == countCanton1):
+                    countProvince += 1
 
             countCantonDelete = 1
             for z in x.getCantonList():
                 if (optionCanton == countCantonDelete):
-                    territorialDistributionList.pop(countCantonDelete - 1)
+                    Canton.pop(countCantonDelete - 1)
                 countCantonDelete +=1
 
 
@@ -335,26 +340,36 @@ def createDistrict():
     count = 1
     for i in territorialDistributionList:
         print(str(count) + ")" + i.name + "\n")
-        count = count + 1
+        count +=1
     option = int(input("Choose a Province: "))
 
-    countCanton = 1
+    countProvince = 1
     for x in territorialDistributionList:
-        print(str(countCanton)+")" + x.name + "\n")
-        countCanton+=1
-    option = int(input("Choose a Canton: "))
+        if (option == countProvince):
+            countProvince += 1
 
-    countDistrict = 1
-    for z in territorialDistributionList:
-        if (option == countDistrict):
-            name = (input("1) District name (" + z.name + ") : "))
-            newDistrict = District.District(name)  # crea un objeto del tipo canton
-            z.addDistrict(newDistrict)  # guarda el objeto en la clase provincia
+            countCanton = 1
+            for y in x.getCantonList():
+                print(str(countCanton) + ")" + y.name + "\n")
+                countCanton += 1
+            optionCanton = int(input("Choose a Canton: "))
 
-        countDistrict += 1
+            countCanton1 = 1
+            for r in y.getCantonList:
+                if (option == countCanton1):
+                    countCanton1 += 1
 
-    print("Canton add succesfully")
-    manageCanton()
+                    countDistrict = 1
+                    for z in r.DistrictList:
+                        if (option == countDistrict):
+                            name = (input("1) District name (" + z.name + ") : "))
+                            newDistrict = District.District(name)  # crea un objeto del tipo distrito
+                            z.addDistrict(newDistrict)  # guarda el objeto en la clase canton
+
+                        countDistrict += 1
+
+    print("District add succesfully")
+    manageDistrict()
 
 
 #opciones de administracion de partidos politicos
