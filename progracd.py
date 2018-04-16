@@ -1,4 +1,4 @@
-usersList = [{"name":"Dayana","age":17,"id": 123,"email":"fsdfsd","typeUser":"Administrator", "password":"123"}] #Listado de usuarios registrados en el sistema
+usersList = [{"name":"Dayana","age":17,"id": 1,"email":"fsdfsd","typeUser":"Administrator", "password":"1"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
 politicalList = [{}]# lista de partidos politicos
 distribution = []
@@ -160,10 +160,18 @@ def manageProvince():
     else:
         territorialDistributionOptions()
 
+
+#Diccionario de provincia
+def addProvinceData(nameProvince,deputyNumber):
+    newProvince = {}
+    newProvince["nameProvince"]= nameProvince
+    nameProvince["deputyNumber"] = deputyNumber
+    territorialDistributionList.append(nameProvince)
+
 # permite crear provincias y agregar los diputados
 def createProvince():
     print("\n")
-    name = (input("1) Province name: "))
+    nameProvince = (input("1) Province name: "))
     deputyNumber = int(input("2) Deputy number: "))
 
    # newProvince = Province.Province(name, deputyNumber)
@@ -176,18 +184,18 @@ def createProvince():
 def modifyProvince():
     count = 1
     for i in territorialDistributionList:
-        print(str(count) + ")" + i.name + "\n")
+        print(str(count) + ")" + i.nameProvince + "\n")
         count = count + 1
     option = int(input("Choose a Province: "))
 
     countModify = 1
     for x in territorialDistributionList:
         if (option == countModify):
-            name = (input("1) Province name (" + x.name + ") : "))
+            nameProvince = (input("1) Province name (" + x.nameProvince + ") : "))
             deputyNumber = int(input("2) Deputy number(" + str(x.deputyNumber) + ")): "))
 
-            x.name = name
-            x.deputyNumber = deputyNumber
+            nameProvince = nameProvince
+            deputyNumber = deputyNumber
 
         countModify += 1
     print("Province update succesfully")
