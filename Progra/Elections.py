@@ -1,4 +1,4 @@
-usersList = [{"name":"Dayana","age":17,"id": 1,"email":"fsdfsd","typeUser":"Administrator", "password":"1"}] #Listado de usuarios registrados en el sistema
+usersList = [{"name":"Dayana","age":"17","id": "1","email":"fsdfsd","typeUser":"Administrator", "password":"1"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
 territorialDistributionList = []
 politicalList = []# lista de partidos politicos
@@ -6,12 +6,12 @@ politicalList = []# lista de partidos politicos
 
 #Despliegua la interfaz de registro para los usuarios nuevos
 def registerUI():
-    print("\n")
+    print("\nUser register")
     name = (input("1) Complete name: "))
-    age = int(input("2) Age: "))
+    age = (input(str("2) Age: ")))
     email = (input("3) Email: "))
-    id = int(input("4) ID: "))
-    password = (input("5) Password:"))
+    id = (input(str("4) ID: ")))
+    password = (input(str("5) Password:")))
 
     #Obtiene el tipo de usuario y lo almacena en una variable local
     typeUser = registerUserTypeUI()
@@ -26,15 +26,17 @@ def registerUserTypeUI():
     print("Type of user:\n"
           "  1) Administrator\n"
           "  2) Invited")
-    option = int(input("Option: "))
+    option = (input(str("Option: ")))
 
-    if (option == 1):
+    if (option == "1"):
         return "Administrator"
         menuLoginUI()
-    elif option == 2:
+    elif option == "2":
         return "Invited"
     else:
         return "Unknow"
+
+
 
 
 #Almacena los registro en el diccionario
@@ -50,9 +52,9 @@ def registerUser(name,age,email,id,password,typeUser):
 
 #Interfaz que obtiene el id y contraseña del usuario previamente registrado
 def loginUI():
-    print("\n")
-    id = int(input("ID: "))
-    password = str(input("Password: "))
+    print("\nLog in")
+    id = (input(str("ID: ")))
+    password = (input(str("Password: ")))
     loginUser(id,password)
 
 #Logea al usuario en el sistema
@@ -78,103 +80,110 @@ def main():
     run_program = True
 
     while(run_program):
-        print("\n\n")
-        option = int(input("choose an option \n"
-              "1) Login\n"
-              "2) Sign in\n"
-              "3) exit\n"
-              "Option: "))
-        if(option == 1):
+        print("        Welcome to the national election system!  \n    ")
+        print("Do you already have an account? log in. If not register.")
+        option = (input(str("Choose an option to perform \n"
+                            "1) Login\n"
+                            "2) Sign in\n"
+                            "3) exit\n"
+                            "Option: ")))
+        if(option == "1"):
             loginUI()
-        elif option == 2:
+        elif option == "2":
             registerUI()
-        elif option == 3:
+        elif option == "3":
             run_program = False
+
 
 #Opciones del Administrador
 def administratorOptionsUI():
-    print("\n\n")
-    option = int(input("Choose an option \n"
+    print("\n")
+    option = (input(str("Welcome to the administrator's menu. What do you want to make? \n"
                        "1) Territorial distribution\n"
                        "2) Administration of political paties\n"
                        "3) Administration of ballots\n"
                        "4) Results\n"
                        "5) Consultation\n"
                        "6) Sing off\n"
-                       "Option: "))
+                       "Option: ")))
     administratorOptionRediret(option)
 
 #redirige segun la opci]on tomada por el administrador
 def administratorOptionRediret(option):
-    if (option == 1):
+    if (option == "1"):
        territorialDistributionOptions()
-    elif (option == 2):
+    elif (option == "2"):
         politicalPartiesOptions()
-    elif (option == 3):
+    elif (option == "3"):
         typeBallots()
-    elif (option == 4):
+    elif (option == "4"):
         '''# redirigir a resultados'''
-    elif (option == 5):
+    elif (option == "5"):
         '''# redirigir a consultas'''
-    elif (option == 6):
+    elif (option == "6"):
         main()
     else:
-        print("Wrong option. Try again!" + administratorOptionRediret())
+        print("Wrong option. Try again.")
+        administratorOptionsUI()
 
 # opciones de administracion de distribucipon territorial
 def territorialDistributionOptions():
-    print("\n\n")
-    option = int(input("choose an option \n"
+    print("\n")
+    option = (input(str("What do you want to manage? \n"
                "1) Manage Province\n"
                "2) Manage Canton\n"
                "3) Manage District\n"
                "4) Back\n"
-               "Option: "))
+               "Option: ")))
     territorialDistributionOptionRediret(option)
 
 #redirige segun la opcion de distribuci[on territorial
 def territorialDistributionOptionRediret(option):
-    if (option == 1):
+    if (option == "1"):
         manageProvince()
-    elif (option == 2):
+    elif (option == "2"):
         manageCanton()
-    elif (option == 3):
+    elif (option == "3"):
        manageDistrict()
-    else:
+    elif (option == "4"):
         administratorOptionsUI()
+    else:
+        territorialDistributionOptions()
 
 # permite modificar,crear o eliminar provincias
 def manageProvince():
-    print("\n\n")
-    option = int(input("choose an option \n"
+    print("\n")
+    option = (input(str("What do you want to do in provincial administration? \n"
                        "1) Create Province\n"
                        "2) Modify Province\n"
                        "3) Delete Province\n"
                        "4) Back\n"
-                       "Option: "))
+                       "Option: ")))
 
     manageProvinceRedirect(option)
 
-#
+#redirije las opciones de crear, modificar y eliminar provivias
 def manageProvinceRedirect(option):
-    if (option == 1):
+    if (option == "1"):
         createProvince()
-    elif (option == 2):
+    elif (option == "2"):
         modifyProvince()
-    elif (option == 3):
+    elif (option == "3"):
         deleteProvince()
-    else:
+    elif (option == "4"):
         territorialDistributionOptions()
+    else:
+        manageProvince()
 
 # permite crear provincias y agregar los diputados
 def createProvince():
-    print("\n")
+    print("\n Enter data to create a province")
     name = (input("1) Province name: "))
     deputyNumber = input(str("2) Deputy number: "))
 
     newProvince(name,deputyNumber)
 
-    print("Province add succesfully")
+    print("Province  created successfully!")
     manageProvince()
 
 #Diccionario de provincia
@@ -187,18 +196,19 @@ def newProvince(name,deputyNumber):
 
 # permite modificar la provincia y numero de diputados
 def modifyProvince():
-    option = input("What do you want to change in the province?\n"
+    option = input("\nWhat do you want to change in the province?\n"
                    "1)Name Province\n"
                    "2)Deputy Number\n"
                    "3)Back\n"
                    "Chooose your option: ")
-
+    print("\nProvince created:")
     if option == "1":
         for i in territorialDistributionList:
             name= i["name"]
             print (name)
-            option = (input("Name Province: "))
+        option = (input("Name Province: "))
 
+        print("\n")
         for y in territorialDistributionList:
             if y["name"] == option:
                 newName = input("New Name: ")
@@ -210,9 +220,10 @@ def modifyProvince():
 
     elif option == "2":
         for i in territorialDistributionList:
+            name = i["name"]
             deputyNumber = i["deputyNumber"]
-            print(deputyNumber)
-            option = (input(str("Number of deputies: ")))
+            print(name,deputyNumber)
+        option = (input(str("Number of deputies: ")))
 
         for y in territorialDistributionList:
             if y["deputyNumber"] == option:
@@ -416,44 +427,53 @@ def createDistrict():
 #opciones de administracion de partidos politicos
 def politicalPartiesOptions():
     print("\n\n")
-    option = int(input("choose an option \n"
+    option = (input(str("choose an option \n"
                        "1) Create political partie\n"
                        "2) Modificate political partie\n"
                        "3) Eliminate political partie\n"
                        "4) Back\n"
-                       "Option: "))
+                       "Option: ")))
     politicalPartiesOptionRediret(option)
 
 #redirige segun la opcion de partidos politicos
 def politicalPartiesOptionRediret(option):
-    if (option == 1):
+    if (option == "1"):
         addPoliticalPartie()
-    elif (option == 2):
+    elif (option == "2"):
         modifyPoliticalPartie()
-    elif (option == 3):
+    elif (option == "3"):
         deletePoliticalPartie()
-    else:
+    elif (option == "4"):
         administratorOptionsUI()
+    else:
+        politicalPartiesOptions()
 
 # Anade un nuevo partido politico a la lista
 def addPoliticalPartie():
     print("\n")
-    name = (input("1) Political name: "))
+    namePartie = (input("1) Political name: "))
     foundationYear = int(input("2) Year foundation: "))
     color = (input("3) Colors: "))
     ideologicalCurrent = input("4) Ideological current: ")
 
     typeBallots = typeBallotsPartieUI()
-
-    newProvince = Province.Province(typeBallots)
     territorialDistributionList.append(typeBallots)
 
-    newPoliticalPartie = PoliticalPartie.PoliticalPartie(name,foundationYear,color,ideologicalCurrent)
+    newPoliticalPartie(namePartie,foundationYear,color,ideologicalCurrent)
     politicalList.append(newPoliticalPartie)
 
     print("Political partie add succesfully")
     politicalPartiesOptions()
 
+
+#diccionario de partidos politicos
+def newPoliticalPartie(namePartie,foundationYear,color,ideologicalCurrent):
+    newPartie = {}
+    newPartie["namePartie"] = namePartie
+    newPartie["foundationYear"] = foundationYear
+    newPartie["color"] = color
+    newPartie["ideologicalCurrent"] = ideologicalCurrent
+    politicalList.append(newPartie)
 
 #permite elegir si el partido es presidencial o legislativo
 def typeBallotsPartieUI():
