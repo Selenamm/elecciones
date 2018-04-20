@@ -1,8 +1,3 @@
-import subprocess as sub
-sub.Popen("cmd \k dir")
-
-
-from Progra import PoliticalPartie,Province,Canton,District,Ballots
 usersList = [{"name":"Dayana","age":17,"id": 1,"email":"fsdfsd","typeUser":"Administrator", "password":"1"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
 territorialDistributionList = []
@@ -158,6 +153,10 @@ def manageProvince():
                        "4) Back\n"
                        "Option: "))
 
+    manageProvinceRedirect(option)
+
+#
+def manageProvinceRedirect(option):
     if (option == 1):
         createProvince()
     elif (option == 2):
@@ -171,33 +170,68 @@ def manageProvince():
 def createProvince():
     print("\n")
     name = (input("1) Province name: "))
-    deputyNumber = int(input("2) Deputy number: "))
+    deputyNumber = input(str("2) Deputy number: "))
 
-    newProvince = Province.Province(name, deputyNumber)
-    territorialDistributionList.append(newProvince)
+    newProvince(name,deputyNumber)
 
     print("Province add succesfully")
     manageProvince()
 
+#Diccionario de provincia
+def newProvince(name,deputyNumber):
+    newProvince = {}
+    newProvince["name"] = name
+    newProvince["deputyNumber"] = deputyNumber
+
+    territorialDistributionList.append(newProvince)
+
 # permite modificar la provincia y numero de diputados
 def modifyProvince():
-    count = 1
-    for i in territorialDistributionList:
-        print(str(count) + ")" + i.name + "\n")
-        count = count + 1
-    option = int(input("Choose a Province: "))
+    option = input("What do you want to change in the province?\n"
+                   "1)Name Province\n"
+                   "2)Deputy Number\n"
+                   "3)Back\n"
+                   "Chooose your option: ")
 
-    countModify = 1
-    for x in territorialDistributionList:
-        if (option == countModify):
-            name = (input("1) Province name (" + x.name + ") : "))
-            deputyNumber = int(input("2) Deputy number(" + str(x.deputyNumber) + ")): "))
+    if option == "1":
+        for i in territorialDistributionList:
+            name= i["name"]
+            print (name)
+            option = (input("Name Province: "))
 
-            x.name = name
-            x.deputyNumber = deputyNumber
+        for y in territorialDistributionList:
+            if y["name"] == option:
+                newName = input("New Name: ")
+                y["name"] = newName
+                print("Name province update succesfully")
+            else:
+                print("The province does not exist, try again.")
+                return modifyProvince()
 
-        countModify += 1
-    print("Province update succesfully")
+    elif option == "2":
+        for i in territorialDistributionList:
+            deputyNumber = i["deputyNumber"]
+            print(deputyNumber)
+            option = (input(str("Number of deputies: ")))
+
+        for y in territorialDistributionList:
+            if y["deputyNumber"] == option:
+                newNum = (input("New number of Diputies: "))
+                y["deputyNumber"] = newNum
+                print("Number of deputies update succesfully")
+
+            else:
+                print("The number of deputies does not exist, try again.")
+                return modifyProvince()
+
+    elif option == "3":
+        manageProvince()
+
+    else:
+        print("Invalid option, try again")
+        modifyProvince()
+
+
     manageProvince()
 
 #permite eliminar la provincia deseada
@@ -411,7 +445,10 @@ def addPoliticalPartie():
 
     typeBallots = typeBallotsPartieUI()
 
-    newPoliticalPartie = PoliticalPartie.PoliticalPartie(name,foundationYear,color,ideologicalCurrent,typeBallots)
+    newProvince = Province.Province(typeBallots)
+    territorialDistributionList.append(typeBallots)
+
+    newPoliticalPartie = PoliticalPartie.PoliticalPartie(name,foundationYear,color,ideologicalCurrent)
     politicalList.append(newPoliticalPartie)
 
     print("Political partie add succesfully")
@@ -429,13 +466,13 @@ def typeBallotsPartieUI():
     if (option == 1):
         return "Presidential"
     elif option == 2:
-        return addPartieLegislativeProvince()
+        return "legislative"
     else:
         return typeBallotsPartieUI()
 
 
 #agrega los partidos legislativos a las provincias
-def addPartieLegislativeProvince():
+'''def addPartieLegislativeProvince():
     count = 1
     for i in territorialDistributionList:
         print(str(count) + ")" + i.name + "\n")
@@ -449,7 +486,7 @@ def addPartieLegislativeProvince():
                 newLegislativeBallots = Province.Province(legislative)
                 territorialDistributionList.append(newLegislativeBallots)
 
-
+'''
 
 #modifica los partidos registrados
 def modifyPoliticalPartie():
