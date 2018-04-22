@@ -278,6 +278,7 @@ def manageCanton():
 
 #permite crear cantones
 def createCanton():
+<<<<<<< HEAD
     i=0
     while i < len(territorialDistributionList):
         if territorialDistributionList[i]
@@ -296,8 +297,29 @@ def createCanton():
     print("Canton add succesfully")
     #nameCanton(nameCanton)
 
-    manageCanton()
+=======
+    for i in territorialDistributionList:
+        province = i["name"]
+        print(province)
+    option = input(str("Choose a province:"))
 
+    for x in territorialDistributionList:
+        if x["name"] ==option:
+            nameCanton = (input(str("Name Canton: ")))
+            x["name"] = nameCanton
+            print("Name canton add succesfully")
+        else:
+            print("The province does not exist, try again.")
+            addCanton(nameCanton)
+        print(nameCanton)
+>>>>>>> 426003ae13fa76c499b4c863dd49c2ca3fe25f42
+    manageCanton()
+def addCanton(nameCanton):
+    newCanton={}
+    newCanton["nameCanton"]=nameCanton
+    territorialDistributionList.append(newCanton)
+
+<<<<<<< HEAD
 #diccionario del crear canton
 def newCanton(nameCanton):
     newCanton = {}
@@ -310,29 +332,54 @@ def modifyCanton():
         #print i.name )
 
     option = int(input("Choose a Province: "))
+=======
+def modifyCanton():
+    option = input("What do you want to change in the province?\n"
+                   "1)Name Province\n"
+                   "2)Deputy Number\n"
+                   "3)Back\n"
+                   "Chooose your option: ")
+>>>>>>> 426003ae13fa76c499b4c863dd49c2ca3fe25f42
 
-    countProvince = 1
-    for x in territorialDistributionList:
-        if (option == countProvince):
+    if option == "1":
+        for i in territorialDistributionList:
+            name = i["name"]
+            print(name)
+            option = (input("Name Province: "))
 
-            countCanton = 1
-            for y in x.getCantonList():
-                print(str(countCanton) + ")" + y.name + "\n")
-                countCanton += 1
-            optionCanton = int(input("Choose a Canton: "))
+        for y in territorialDistributionList:
+            if y["name"] == option:
+                newName = input("New Name: ")
+                y["name"] = newName
+                print("Name province update succesfully")
+            else:
+                print("The province does not exist, try again.")
+                return modifyProvince()
 
-            countCantonModify = 1
-            for z in x.getCantonList():
-                if(optionCanton == countCantonModify):
-                    name = input("Canton name("+z.name+"): ")
-                    z.name = name
-                countCantonModify += 1
+    elif option == "2":
+        for i in territorialDistributionList:
+            deputyNumber = i["deputyNumber"]
+            print(deputyNumber)
+            option = (input(str("Number of deputies: ")))
 
-        countProvince += 1
+        for y in territorialDistributionList:
+            if y["deputyNumber"] == option:
+                newNum = (input("New number of Diputies: "))
+                y["deputyNumber"] = newNum
+                print("Number of deputies update succesfully")
 
+            else:
+                print("The number of deputies does not exist, try again.")
+                return modifyProvince()
 
-    print("Canton update succesfully")
-    manageCanton()
+    elif option == "3":
+        manageProvince()
+
+    else:
+        print("Invalid option, try again")
+        modifyProvince()
+
+    manageProvince()
 
 #PErmite eliminar los cantones
 def deleteCanton():
