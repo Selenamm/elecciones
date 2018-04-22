@@ -1,8 +1,8 @@
 usersList = [{"name":"Dayana","age":"17","id": "1","email":"fsdfsd","typeUser":"Administrator", "password":"1"}] #Listado de usuarios registrados en el sistema
 userLogged = {} #Mantiene los datos del usuario autenticado
-territorialDistributionList = []
+territorialDistributionList = []# Lista de distribucion territorial, almacena provinvias, cantones, distritos
 politicalList = []# lista de partidos politicos
-
+presidentialList = []# almacena la papelta presidencial
 
 #Despliegua la interfaz de registro para los usuarios nuevos
 def registerUI():
@@ -113,9 +113,9 @@ def administratorOptionRediret(option):
     if (option == "1"):
        territorialDistributionOptions()
     elif (option == "2"):
-        politicalPartiesOptions()
+        politicalPartyOptions()
     elif (option == "3"):
-        typeBallots()
+        administrationBallots()
     elif (option == "4"):
         '''# redirigir a resultados'''
     elif (option == "5"):
@@ -188,9 +188,10 @@ def createProvince():
 
 #Diccionario de provincia
 def newProvince(name,deputyNumber):
-    newProvince = {}
+    newProvince = {"nameCanton":[]}
     newProvince["name"] = name
     newProvince["deputyNumber"] = deputyNumber
+
 
     territorialDistributionList.append(newProvince)
 
@@ -245,7 +246,7 @@ def deleteProvince():
     for i in territorialDistributionList:
         name = i["name"]
         print(name)
-    option = (input(str("Name of province you want to delete: ")))
+    option = (input("Name of province you want to delete: "))
 
     print("\n")
     for y in territorialDistributionList:
@@ -277,30 +278,37 @@ def manageCanton():
 
 #permite crear cantones
 def createCanton():
-    count = 1
+    i=0
+    while i < len(territorialDistributionList):
+        if territorialDistributionList[i]
+
+
+
     for i in territorialDistributionList:
-        print(str(count) + ")" + i.name + "\n")
-        count = count + 1
-    option = int(input("Choose a Province: "))
+        province = i["name"]
+        print(province)
+    option = (input("Choose a Province: "))
 
-    countModify = 1
     for x in territorialDistributionList:
-        if (option == countModify):
-            name = (input("1) Canton name (" + x.name + ") : "))
-            newCanton = Canton.Canton(name)     #crea un objeto del tipo canton
-            x.addCanton(newCanton)         #guarda el objeto en la clase provincia
-
-        countModify += 1
-
+        if x["name"]==option:
+            nameCanton = (input("1) Canton name"))
+        newCanton(nameCanton)
     print("Canton add succesfully")
+    #nameCanton(nameCanton)
+
     manageCanton()
+
+#diccionario del crear canton
+def newCanton(nameCanton):
+    newCanton = {}
+    newCanton["nameCanton"] = nameCanton
+    territorialDistributionList.append(newCanton)
 
 #permite modificar cantones
 def modifyCanton():
-    count = 1
-    for i in territorialDistributionList:
-        print(str(count) + ")" + i.name + "\n")
-        count = count + 1
+   for i in territorialDistributionList:
+        #print i.name )
+
     option = int(input("Choose a Province: "))
 
     countProvince = 1
@@ -419,242 +427,228 @@ def createDistrict():
 
 
 #opciones de administracion de partidos politicos
-def politicalPartiesOptions():
+def politicalPartyOptions():
     print("\n\n")
     option = (input(str("choose an option \n"
-                       "1) Create political partie\n"
-                       "2) Modificate political partie\n"
-                       "3) Eliminate political partie\n"
+                       "1) Create political party\n"
+                       "2) Modificate political party\n"
+                       "3) Eliminate political party\n"
                        "4) Back\n"
                        "Option: ")))
-    politicalPartiesOptionRediret(option)
+    politicalPartyOptionRediret(option)
 
 #redirige segun la opcion de partidos politicos
-def politicalPartiesOptionRediret(option):
+def politicalPartyOptionRediret(option):
     if (option == "1"):
-        addPoliticalPartie()
+        addPoliticalParty()
     elif (option == "2"):
-        modifyPoliticalPartie()
+        modifyPoliticalParty()
     elif (option == "3"):
-        deletePoliticalPartie()
+        deletePoliticalParty()
     elif (option == "4"):
         administratorOptionsUI()
     else:
-        politicalPartiesOptions()
+        politicalPartyOptions()
 
 # Anade un nuevo partido politico a la lista
-def addPoliticalPartie():
+def addPoliticalParty():
     print("\n")
-    namePartie = (input("1) Political name: "))
+    nameParty = (input("1) Political name: "))
     foundationYear = int(input("2) Year foundation: "))
-    color = (input("3) Colors: "))
-    ideologicalCurrent = input("4) Ideological current: ")
+    color = (input(str("3) Colors: ")))
+    ideologicalCurrent = input(str("4) Ideological current: "))
 
-    typeBallot = typeBallotsPartieUI()
-    #territorialDistributionList.append(typeBallots)
+    newPoliticalParty(nameParty,foundationYear,color,ideologicalCurrent)
 
-    newPoliticalPartie(namePartie,foundationYear,color,ideologicalCurrent,typeBallot)
 
-    print(typeBallot)
-    print("Political partie add succesfully")
-    politicalPartiesOptions()
+    print("Political party add succesfully")
+    politicalPartyOptions()
 
 
 #diccionario de partidos politicos
-def newPoliticalPartie(namePartie,foundationYear,color,ideologicalCurrent,typeBallot):
-    newPartie = {}
-    newPartie["namePartie"] = namePartie
-    newPartie["foundationYear"] = foundationYear
-    newPartie["color"] = color
-    newPartie["ideologicalCurrent"] = ideologicalCurrent
-    newPartie["typeBallot"] = typeBallot
-    politicalList.append(newPartie)
-
-#permite elegir si el partido es presidencial o legislativo
-def typeBallotsPartieUI():
-    print("\n")
-    print("Type of ballot:\n"
-          "  1) Presidential\n"
-          "  2) Legilative")
-    option = input(str("Option: "))
-
-    if (option == "1"):
-        return "Presidential"
-    elif option == "2":
-        return "legislative"
-    else:
-        return typeBallotsPartieUI()
-
-
-#agrega los partidos legislativos a las provincias
-'''def addPartieLegislativeProvince():
-    count = 1
-    for i in territorialDistributionList:
-        print(str(count) + ")" + i.name + "\n")
-        count = count + 1
-        option = int(input("Choose a Province: "))
-
-        countProvince = 1
-        for x in territorialDistributionList:
-            if (option == countProvince):
-                legislative = politicalList
-                newLegislativeBallots = Province.Province(legislative)
-                territorialDistributionList.append(newLegislativeBallots)
-
-'''
+def newPoliticalParty(nameParty,foundationYear,color,ideologicalCurrent):
+    newParty = {}
+    newParty["nameParty"] = nameParty
+    newParty["foundationYear"] = foundationYear
+    newParty["color"] = color
+    newParty["ideologicalCurrent"] = ideologicalCurrent
+    politicalList.append(newParty)
 
 #modifica los partidos registrados
-def modifyPoliticalPartie():
+def modifyPoliticalParty():
     print("\nWhat change do you want to make to the political party?")
-    option = input(str("1) Name political partie\n"
+    option = input(str("1) Name political party\n"
                        "2) Foundation year\n"
                        "3) Color\n"
                        "4) Ideological Current\n"
-                       "5) Type ballot\n"
-                       "6) Back\n"
+                       "5) Back\n"
                        "Choose your option: "))
 
     if option == "1":
         for i in politicalList:
-            partie= i["namePartie"]
-            print(partie)
+            party= i["nameParty"]
+            print(party)
         option = (input(str("Choose a political party: ")))
 
         for x in politicalList:
-                if x["namePartie"] == option:
-                    newNamePartie = input(str("New name political partie: "))
-                    x["namePartie"] = newNamePartie
-        print("Name political partie update succesfully")
+                if x["nameParty"] == option:
+                    newNameParty = input(str("New name political party: "))
+                    x["nameParty"] = newNameParty
+        print("Name political party update succesfully")
 
     elif option == "2":
         for i in politicalList:
-            partie = i["namePartie"]
+            party = i["nameParty"]
             foundationYear= i["foundationYear"]
-            print(partie,foundationYear)
+            print(party,foundationYear)
         option = (input(str("Choose a political party: ")))
 
         for x in politicalList:
-                if x["namePartie"] == option:
-                    newYearPartie = input(str("New foundation year political partie: "))
-                    x["foundationYear"] = newYearPartie
+                if x["nameParty"] == option:
+                    newYearParty = input(str("New foundation year political party: "))
+                    x["foundationYear"] = newYearParty
         print("Foundation year of political party update succesfully")
 
     elif option == "3":
         for i in politicalList:
-            partie = i["namePartie"]
+            party = i["nameParty"]
             colors= i["color"]
-            print(partie,colors)
+            print(party,colors)
         option = (input(str("Choose a political party: ")))
 
         for x in politicalList:
-                if x["namePartie"] == option:
-                    newColorPartie = input(str("New color of the political partie: "))
-                    x["color"] = newColorPartie
+                if x["nameParty"] == option:
+                    newColorParty = input(str("New color of the political party: "))
+                    x["color"] = newColorParty
         print("Colors of political party update succesfully")
 
     elif option == "4":
         for i in politicalList:
-            partie = i["namePartie"]
+            party = i["nameParty"]
             ideologicalCurrent= i["ideologicalCurrent"]
-            print(partie,ideologicalCurrent)
+            print(party,ideologicalCurrent)
         option = (input(str("Choose a political party: ")))
 
         for x in politicalList:
-                if x["namePartie"] == option:
-                    newIdeologicalPartie = input(str("New color of the political partie: "))
-                    x["ideologicalCurrent"] = newIdeologicalPartie
+                if x["nameParty"] == option:
+                    newIdeologicalParty = input(str("New color of the political party: "))
+                    x["ideologicalCurrent"] = newIdeologicalParty
         print("Ideological current of political party update succesfully")
 
-    elif option == "5":
-        for i in politicalList:
-            partie = i["namePartie"]
-            ballot = i["typeBallot"]
-            print(partie,ballot)
-        option = input(str("Choose a political party: "))
 
-        for x in politicalList:
-            if i["namePartie"] == option:
-                newTypeBallot = typeBallotsPartieUI()
-                x["typeBallot"] = newTypeBallot
-            print("Type ballot of political party update succesfully")
-
-
-    politicalPartiesOptions()
+    politicalPartyOptions()
 
 #elimina los partidos politicos
-def deletePoliticalPartie():
+def deletePoliticalParty():
    for i in politicalList:
-       namePartie = i["namePartie"]
-       print(namePartie)
-   option = (input(str("Choose a polotical partie: ")))
+       nameParty = i["nameParty"]
+       print(nameParty)
+   option = (input(str("Choose a political party: ")))
 
    for x in politicalList:
-        if (x["namePartie"]==option):
+        if (x["nameParty"]==option):
             politicalList.remove(x)
 
-   print("Partie delete succesfully!")
-   politicalPartiesOptions()
+   print("Party delete succesfully!")
+   politicalPartyOptions()
 
-#permite elegir el tipo de papeleta: presidencial o legistativa
-def typeBallots():
-    print("\n\n")
-    option = int(input("Choose an option \n"
-                       "1) Presidential Ballots\n"
-                       "2) Legislative Ballots\n"
-                       "3) Back\n"
-                       "Option: "))
-
-    if (option == 1):
-        administrationBallots()
-    elif (option == 2):
-        administrationBallots()
-    else:
-        administratorOptionsUI()
 
 #menu que permite crear, modificar o eliminar una papeleta
 def administrationBallots():
     print("\n\n")
-    option = int(input("Choose an option \n"
+    option =(input(str("Choose an option \n"
                        "1) Create Ballots\n"
                        "2) Modify Ballots\n"
                        "3) Delete Ballots\n"
                        "4) Back\n"
-                       "Option: "))
+                       "Option: ")))
 
 
-    if (option == 1):
+    if (option == "1"):
         createBallots()
-    elif (option == 2):
-        '''modificar papeleta'''
-    elif (option == 3):
-        '''eliminar papeleta'''
+    elif (option == "2"):
+        modifyBallots()
+    elif (option == "3"):
+       '''typeBallots()'''
+    elif (option == "4"):
+        '''administratorOptionsUI()'''
     else:
-        typeBallots()
+        '''administratorOptionsUI()'''
+'''
+#permite elegir el tipo de papeleta: presidencial o legistativa
+def typeBallots():
+    print("\n\n")
+    option = (input(str("Choose an option \n"
+                       "1) Presidential Ballots\n"
+                       "2) Legislative Ballots\n"
+                       "3) Back\n"
+                       "Option: ")))
 
+    if (option == "1"):
+        createBallotPresidential()
+    #elif (option == "2"):
 
+    else:
+        administratorOptionsUI()
 
+'''
 
 
 #permite crear papeletas
 def createBallots():
-    count = 1
     for i in politicalList:
-        print(str(count) + ")" + i.name + "\n")
-        count = count + 1
+        party = i["nameParty"]
+        print(party)
+    option = input(str("Choose the party which you want to add to the ballot: "))
+
+    for x in politicalList:
+        if x["nameParty"]==option:
+            nameParty = x["nameParty"]
+            print("Type ballot")
+            typeBallot = input(str("Presidential or Lesgislative"))
+            if typeBallot == "Presidential":
+                if typeBallot == "presidential":
+                    presidential = typeBallot
+                    addBallotPresidential(nameParty,presidential)
+
+                print(nameParty,presidential)
+
+            elif typeBallot == "Legislative":
+                if typeBallot == "legislative":
+                    nameParty=x["nameParty"]
+                    for y in territorialDistributionList:
+                        province = y["name"]
+                        print(province)
+                    option = input(str("Choose a province: "))
+                    for n in territorialDistributionList:
+                        if n["name"] == option:
+                            nameProvince = n["name"]
+                            legislative = typeBallot
 
 
     administrationBallots()
-def modifyBallots():
-    count = 1
-    for i in politicalList:
-        print(str(count) + ")" + i.name + "\n")
-        count = count + 1
-    option = int(input("choose a partie: "))
 
-    countModify = 1
-    for x in politicalList:
-        if (option == countModify):
-            typeBallots = (str(count) + ")" + i.name + "\n")
+
+def addBallotPresidential(nameParty,presidential):
+    ballotPresidential = {}
+    ballotPresidential["presidential"]=presidential
+    ballotPresidential["nameParty"]=nameParty
+
+    presidentialList.append(ballotPresidential)
+
+def addBallotLegislative(nameParty,legislative,nameProvince):
+    ballotLegislative = {}
+    ballotLegislative["legislative"]= legislative
+    ballotLegislative["nameParty"] = nameParty
+    ballotLegislative["namePtovince"] = nameProvince
+    territorialDistributionList.append(ballotLegislative)
+
+def modifyBallots():
+    for i in presidentialList:
+        nameParty = ["nameParty"]
+        presidential=["presidential"]
+        print(nameParty,presidential)
+    administrationBallots()
 
 #Permite eliminar las papeletas
 
